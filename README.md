@@ -1,38 +1,59 @@
-# Leaf Disease Detection using Deep Learning
+# 📰 Fake News Detection
 
-<!-- ![Demo](C:\Users\Dell\OneDrive\Desktop\LEAF-DISEASE-PREDICTION\website.gif) -->
-![Demo GIF](images/website.gif)
+## 📖 Description
+A machine learning-based **Fake News Detection** system built using **Python** and **Natural Language Processing (NLP)**. This project aims to classify news articles as **fake** or **real** using a trained model.
 
-This project is a leaf disease detection system that uses deep learning techniques, including transfer learning, to identify and classify 3 different types of leaf diseases. The model has been trained on a dataset containing 900 images, with 300 images for each disease class. This diverse dataset helps ensure that the model can accurately diagnose each disease. Designed for agricultural professionals and enthusiasts, this tool enables fast and accurate plant disease detection.
+## 🚀 Features
+- Uses **TF-IDF Vectorization** for text processing.
+- **Machine Learning Model** trained for classification.
+- Web-based interface for easy news validation.
+- Lightweight and efficient detection system.
 
-## Basic Information About Leaf Diseases
-Leaf diseases are a major concern in agriculture, as they can significantly impact crop health and yield. These diseases are typically caused by fungi, bacteria, or environmental stressors that lead to visible symptoms on leaves, such as spots, discoloration, and wilting. Early detection and diagnosis are crucial to manage these diseases and minimize crop loss.
+## 🛠️ Technologies Used
+- **Python** – Core programming language.
+- **Flask** – Web framework for serving the application.
+- **Scikit-Learn** – Machine learning library.
+- **Pandas & NumPy** – Data processing.
+- **Pickle** – Model serialization.
+- **HTML & CSS** – Frontend interface.
 
-The three leaf disease classes identified in this model include:
+## 📂 Project Structure
+```
+📁 Fake-News-Detection
+ ├── 📁 static        # Contains CSS files
+ ├── 📁 templates     # HTML files for UI
+ ├── 📁 News_dataset  # Dataset used for training
+ ├── 📜 app.py       # Flask application
+ ├── 📜 main.py      # Core script for ML model
+ ├── 📜 model.pkl    # Trained ML model
+ ├── 📜 vectorizer.pkl # TF-IDF Vectorizer
+ ├── 📜 README.md    # Project documentation
+```
 
-- **Corn-Common Rust**: This disease appears as red or brown pustules on corn leaves, typically spread by fungal spores. Common rust can reduce crop yield by affecting photosynthesis.
-  
-- **Potato-Early Blight**: Early blight in potatoes is caused by the *Alternaria solani* fungus, leading to circular or irregular dark spots on leaves. It can spread rapidly in warm and humid conditions.
-  
-- **Tomato-Bacterial Spot**: Caused by bacteria, this disease appears as water-soaked spots on tomato leaves and stems. It affects photosynthesis and reduces the overall quality of tomato fruits.
-
-## Usage
-
-To use the model for leaf disease detection, follow these steps:
-
-1. Make sure you have a Python environment set up with the necessary libraries installed. You can use the provided requirements.txt file to set up the required dependencies.
-
+## 📥 Installation & Usage
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ksathvikreddy31/Fake-News-Detection.git
+   ```
+2. **Navigate to the project directory**:
+   ```bash
+   cd Fake-News-Detection
+   ```
+3. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
-2. Run main.py
+   ```
+4. **Run the Flask app**:
+   ```bash
+   python app.py
+   ```
+5. **Access the web interface**:  
+   Open `http://127.0.0.1:5000/` in your browser.
 
-```
-streamlit run main.py 
-```
+## 🎯 Future Improvements
+- Enhance the model accuracy.
+- Add API integration for real-time news validation.
+- Improve UI/UX for better user interaction.
 
-## Model Details
-The leaf disease detection model is built using deep learning techniques, and it uses transfer learning to leverage the pre-trained knowledge of a base model. The model is trained on a dataset containing images of 33 different types of leaf diseases. For more information about the architecture, dataset, and training process, please refer to the code and documentation provided.
-
-
-## Acknowledgments
-We would like to acknowledge the contributions of the open-source community and the creators of the base model that this project builds upon. Your work and support are greatly appreciated.
+## ✅ Conclusion
+This project demonstrates **Machine Learning, NLP, and Web Development**. It helps users differentiate between **fake** and **real** news efficiently.
